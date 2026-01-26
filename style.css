@@ -159,14 +159,15 @@ h2 {
 }
 
 .contacts {
-  width: 90%;
+  max-width: 1400px;
   margin: 2em auto;
-  display: flex;
-  gap: 20em;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
   background-color: white;
-  padding: 1em;
+  padding: 1.6em;
   border-radius: 10px;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
