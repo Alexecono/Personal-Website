@@ -112,9 +112,10 @@ h2 {
   margin-bottom: 1.5em;
 }
 
-.about {
-  margin-top: 3em;
-  margin-left: 1em;
+.section-container {
+  max-width: 1400px;
+  margin: 3em auto;
+  padding: 0 0.4em;
 }
 
 .projects-grid {
