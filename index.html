@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Economopoulos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="top-bar">
+  <nav>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/alexander-economopoulos" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/Alexecono" target="_blank">GitHub</a></li>
+      <li><a href="Alex_Economopoulos_Resume.pdf" target="_blank">Resume</a></li>
+      <li><a href="#my-projects">Projects</a></li>
+      <li><a href="#my-contacts">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="about">
+  <h2>About me</h2>
+</section>
+<section class="intro">
+  <div class="text-container">
+    <h1>Alex Economopoulos</h1>
+    <p>
+      I’m a Biomedical Engineering student at the University of Waterloo interested in software, simulation, and medical technology.
+      I enjoy building applications for exploring math, physics, and logical problem-solving. Outside of academics, I love chess and volleyball!
+    </p>
+  </div>
+
+  <div class="focus-card">
+    <h2>Current Focus</h2>
+    <p>Building software tools for mathematical visualization</p>
+    <h3>Tools</h3>
+    <p>C++, Python, Java, MATLAB, Simulink, SolidWorks</p>
+  </div>
+</section>
+
+<section id="my-projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Graphing Calculator</h3>
+      <p>Real-time function plotting with custom parsing, zooming, and panning.</p>
+      <video muted loop playsinline preload="metadata">
+      <source src="videos/Graph-Calc-Demo.mp4" type="video/mp4">
+      </video>
+      <span>C++ · OpenGL · ImGui</span>
+    </div>
+
+    <div class="project-card">
+      <h3>Sudoku Solver</h3>
+      <p>Recursive backtracking solver with a clean graphical interface.</p>
+      <video muted loop playsinline preload="metadata">
+      <source src="videos/Sudoku-Solver-Demo.mp4" type="video/mp4">
+      </video>
+      <span>Java · Swing GUI</span>
+    </div>
+
+    <div class="project-card">
+      <h3>2D Collision Simulator</h3>
+      <p>Physics-based collision simulation with user-controlled mass, velocity, position, and elasticity.</p>
+      <video muted loop playsinline preload="metadata">
+      <source src="videos/2D-Collision-Sim-Demo.mp4" type="video/mp4">
+      </video>
+      <span>Python · Tkinter</span>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>Contact me</h2>
+</section>
+
+<section id="my-contacts" class="contacts">
+  <p><b>Email: </b>aecono13@outlook.com</p>
+
+  <p><b>Phone: </b>905-550-9423</p>
+</section>
+
+<script>
+  document.querySelectorAll('.project-card video').forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      video.play();
+    });
+
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+</script>
+
+</body>
+</html>
